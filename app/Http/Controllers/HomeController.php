@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $this->data['is_home'] = true;
+
+        return view('home', $this->data);
     }
 }

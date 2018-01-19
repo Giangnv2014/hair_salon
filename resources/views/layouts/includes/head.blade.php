@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-    <title>Beauty Salon</title>
+    <title>{{ config('app.name') }}</title>
     <!-- Loading third party fonts -->
     <link href="assets/plugins/sleek_beauty_salon/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/sleek_beauty_salon/fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">

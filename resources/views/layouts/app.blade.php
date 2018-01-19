@@ -4,7 +4,7 @@
     @include('layouts.includes.head')
 
 
-    <body class="homepage header-collapse">
+    <body @if (isset($is_home)) class="homepage header-collapse" @endif>
 
         <div id="site-content">
 
