@@ -26,4 +26,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+	public function setPasswordAttribute($value)
+	{
+		$this->attribute['password'] = Hash::make($value);
+	}
+
+	public function isAccessAdmin()
+	{
+		return true;
+	}
 }
