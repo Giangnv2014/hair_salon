@@ -9,5 +9,12 @@ return [
         'contact' => 'Liên hệ',
         'passion' => 'Đam mê',
         'stylist' => 'Stylist',
+        'list' => 'Danh sách',
+        'create' => 'Tạo mới',
+        'action' => 'Hành động',
+    ],
+    'btn' => [
+        'delete' => 'Xóa',
+        'edit' => 'Sửa',
     ],
 ];

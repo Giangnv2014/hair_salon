@@ -19,5 +19,6 @@ Route::namespace('Admin')->group(function () {
 
     Route::group(['middleware' => ['auth.admin']],  function () {
         Route::get('/', 'HomeController@index');
+        Route::get('abouts', 'AboutsController@index');
     });
 });

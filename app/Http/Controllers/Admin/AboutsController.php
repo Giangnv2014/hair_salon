@@ -1,20 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Services\AboutService;
 use Illuminate\Http\Request;
 use App\Models\About;
 
-class AboutsController extends Controller
+class AboutsController extends BaseController
 {
     protected $service;
 
     public function __construct(AboutService $service)
     {
+        parent::__construct();
+
         $this->service = $service;
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -22,9 +23,9 @@ class AboutsController extends Controller
      */
     public function index()
     {
-        $this->data = $this->service->getListAbout();
+        $this->data['abouts'] = $this->service->getListAbout(true);
 
-        return view('frontends.abouts.index', $this->data);
+        return view('backends.abouts.index', $this->data);
     }
 
     /**

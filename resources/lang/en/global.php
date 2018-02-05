@@ -9,5 +9,12 @@ return [
         'contact' => 'Contact',
         'passion' => 'Passion',
         'stylist' => 'Stylist',
+        'list' => 'List',
+        'create' => 'Create',
+        'action' => 'Action',
+    ],
+    'btn' => [
+        'delete' => 'Delete',
+        'edit' => 'Edit',
     ],
 ];
